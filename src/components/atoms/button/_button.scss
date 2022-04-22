@@ -1,0 +1,25 @@
+.button{
+    all: unset;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 0 16px;
+
+    box-sizing: border-box;
+}
+
+.normal-btn{
+    height: 30px;
+}
+.dense-btn{
+    height: 24px !important;
+}
+
+.primary-btn{
+    background-color: $primary;
+    color: $secondary;
+}
+.secondary-btn{
+    background-color: $secondary;
+    color: $primary;
+}

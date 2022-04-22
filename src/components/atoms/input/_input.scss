@@ -1,0 +1,11 @@
+.input{
+    all: unset;
+
+    border: 2px solid $light-grey;
+    border-radius: 4px;
+    height: 40px;
+    padding: 0 14px;
+}
+.input::placeholder{
+    color: $grey;
+}
