@@ -1,4 +1,6 @@
-import React from "react"
+import React, { useEffect } from "react"
+import { useDispatch } from "react-redux"
+import { decrement, increment } from "../../../redux/features/cartSlice"
 
 interface cartItemsProps {
   items: any[]
@@ -10,11 +12,13 @@ interface cartItemProps {
 }
 
 const CartItem = ({ items }: cartItemsProps) => {
+  const dispatch = useDispatch()
+
   const onIncrement = (item: cartItemProps) => {
-    // ...
+    dispatch(increment(item.name))
   }
   const onDecrement = (item: cartItemProps) => {
-    // ...
+    dispatch(decrement(item.name))
   }
   return (
     items &&
