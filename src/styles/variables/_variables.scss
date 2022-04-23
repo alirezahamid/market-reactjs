@@ -1,0 +1,12 @@
+$primary: #1EA4CE;
+$secondary: #F2F0FD;
+
+$grey: #A8A8A8;
+$light-grey: #E0E0E0;
+$dark-grey: #525252;
+
+$breakpoints: (
+  'small':  ( min-width:  767px ),
+  'medium': ( min-width:  992px ),
+  'large':  ( min-width: 1200px )
+) !default;

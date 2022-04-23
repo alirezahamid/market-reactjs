@@ -1,0 +1,33 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &_img{
+        border: 1px solid $grey;
+        border-radius: 8px;
+        padding: 16px;
+
+        &-frame{
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    &_details{
+        display: flex;
+        flex-direction: column;
+        margin: 8px 0;
+
+        &-price{
+            color: $primary;
+        }
+    }
+    &_action{
+        button{
+            width: 100%;
+        }
+    }
+}
